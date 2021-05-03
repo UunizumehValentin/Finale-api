@@ -5,7 +5,6 @@ const connectDB = require("./configurations/connectDB");
 const studentsRoute = require("./routes/studentsRoute");
 const usersRoute = require("./routes/usersRoute");
 const cors = require("cors");
-const { urlencoded } = require("express");
 
 dotenv.config();
 
@@ -15,7 +14,6 @@ connectDB();
 
 //middlewares
 app.use(express.json());
-app.use(urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan("dev"));
 
