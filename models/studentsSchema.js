@@ -10,7 +10,7 @@ const studentsSchema = mongoose.Schema({
     required: true,
   },
   indexNo: {
-    type: Number,
+    type: String,
     required: true,
   },
   destination: {
@@ -22,7 +22,7 @@ const studentsSchema = mongoose.Schema({
     required: true,
   },
   departureDate: {
-    type: Number,
+    type: String,
     required: true,
   },
   returnDate: {
