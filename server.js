@@ -23,7 +23,7 @@ app.use("/api/v2/users", usersRoute);
 
 //home route
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to my students exeat API <h1>");
+  res.send("<h1> WELCOME TO MY STUDENTS EXEAT API <h1>");
 });
 
 const port = process.env.PORT || 5000;
